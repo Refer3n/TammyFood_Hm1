@@ -11,11 +11,25 @@ body {
 
 header {
     width: 100%;
-    height: 785px;
     background: #FFFBF3;
-    justify-content: center;
-    align-items: center;
     color: #3C3C3C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px
+}
+
+.logoScreenContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 133px;
+    padding-bottom: 100px;
+}
+
+.logoTextContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
 }
 
 a {
@@ -26,101 +40,26 @@ span {
     color: #FCC647;
 }
 
-.logoNavDiv {
-    display: flex;
-    margin-left: 133px;
-    margin-top: 29px;
-}
 
 .LogoText {
     font-weight: 900;
     line-height: normal;
     font-size: 32px;
-}
-
-nav {
-    margin: 0 131px 0 480px;
-    display: inline;
-    white-space: nowrap;
-    font-family: Segoe UI;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    height: 27px;
-  }
-  
-nav li {
-    display: inline;
-    margin-right: 15px;
-    list-style: none;
-  }
-  
-nav a {
-    color: #3C3C3C;
-    font-family: Segoe UI;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-nav a:hover {
-    color: #FCC647;
-    text-decoration: underline;
-  }
-
-.logoImageContainer {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.logoImageContainer img {
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 93.11px;
+    margin-bottom: 133px;
 }
 
 .deliveryBtn {
     border-radius: 6px;
     background: #FFEFC8;
-    width: 73px;
+    width: 105px;
     margin-bottom: 13px;
-    padding: 10px 18px;
+    padding: 12px 20px;
     color: #EF9737;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 12px;
-} 
-
-.discoverContainer {
-    display: flex;
-    flex-direction: column;
-    margin-left: 133px;
-    margin-top: 133px;
-}
-
-.discoverContainer .deliveryBtn {
-    width: 117px;
-    height: auto;
-    margin-top: 0;
-    padding: 11.88px 21.38px;
-    text-align: center;
-    font-size: 16.625px;
-    line-height: 14.25px
-}
-
-.discoverContainer p {
-    color: #667085;
-    font-family: Inter;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-}
+    font-weight: 700;
+    line-height: 14px;
+    text-align: center;
+} 
 
 .h1Text {  
     font-family: Segoe UI;
@@ -130,11 +69,11 @@ nav a:hover {
     line-height: normal;
 }
 
-.ButtonsDiv {
+.buttonsDiv {
     display: flex;
 }
 
-.ButtonsDiv p {
+.buttonsDiv p {
     margin: 37px 0 0 22px;
     color: #3C3C3C;
     font-size: 17px;
@@ -168,11 +107,90 @@ nav a:hover {
     border-radius: 50%;
 }
 
+.navAndImgContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+}
+
+nav {
+    margin-bottom: 93px;
+    margin-left: 95px;
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+  
+nav li {
+    display: inline;
+    margin-right: 15px;
+    list-style: none;
+}
+
+  
+nav a {
+    color: #3C3C3C;
+    font-family: Segoe UI;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+nav a:hover {
+    color: #FCC647;
+    text-decoration: underline;
+}
+
+.logoImageContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logoImageContainer img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 93.11px;
+}
+
+.discoverContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 133px;
+    margin-top: 133px;
+}
+
+.discoverContainer .deliveryBtn {
+    width: 117px;
+    height: auto;
+    margin-top: 0;
+    padding: 11.88px 21.38px;
+    text-align: center;
+    font-size: 16.625px;
+    line-height: 14.25px
+}
+
+.discoverContainer p {
+    color: #667085;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
 .descContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 96px;
 }
 
 main {
@@ -349,13 +367,13 @@ h3 {
     height: 712px;
     overflow: hidden;
     align-items: center;
+    justify-content: center;
 }
 
 .deliveryDescContainer img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 134.21px;
     margin-right: 175.86px;
 }
 
