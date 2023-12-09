@@ -7,23 +7,22 @@
 body {
     width: 100vw;
     position: relative;
+    overflow-x: hidden;
 }
 
 header {
-    width: 100%;
     background: #FFFBF3;
     color: #3C3C3C;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 32px
+    line-height: 32px;
 }
 
 .logoScreenContainer {
     display: flex;
     justify-content: space-between;
-    margin-left: 133px;
-    padding-bottom: 100px;
+    margin-left: 5%;
 }
 
 .logoTextContainer {
@@ -40,8 +39,7 @@ span {
     color: #FCC647;
 }
 
-
-.LogoText {
+.logoText {
     font-weight: 900;
     line-height: normal;
     font-size: 32px;
@@ -71,6 +69,8 @@ span {
 
 .buttonsDiv {
     display: flex;
+    margin-left: 5%;
+    padding-bottom: 10%;
 }
 
 .buttonsDiv p {
@@ -110,17 +110,23 @@ span {
 .navAndImgContainer {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     margin-top: 38px;
+    background: #FFFBF3;
 }
 
 nav {
-    margin-bottom: 93px;
-    margin-left: 95px;
+    margin-right: 10%;
+    margin-bottom: 15%;
     font-family: Segoe UI;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+nav ul {
+    width: 100%;
 }
   
 nav li {
@@ -128,7 +134,6 @@ nav li {
     margin-right: 15px;
     list-style: none;
 }
-
   
 nav a {
     color: #3C3C3C;
@@ -144,25 +149,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
-.logoImageContainer {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.logoImageContainer img {
-    max-width: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 93.11px;
-}
-
 .discoverContainer {
     display: flex;
     flex-direction: column;
-    margin-left: 133px;
-    margin-top: 133px;
+    margin: 15% 5% 0 5%;
 }
 
 .discoverContainer .deliveryBtn {
@@ -195,7 +185,6 @@ nav a:hover {
 
 main {
     width: 100%;
-    height: 3193px;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -221,8 +210,8 @@ h2 {
 
 .diagramContainer {
     display: flex;
-    margin: 14px 150px 0 127px;
     align-content: center;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -258,7 +247,6 @@ h2 {
 }
 
 .descBox p {
-    width: 325px;
     margin-top: 0;
 }
 
@@ -280,23 +268,20 @@ h3 {
 .menuContainer {
     display: flex;
     flex-wrap: wrap;
-    margin: 81px 127px;
+    justify-content: center;
+    margin-top: 81px;
+    margin-bottom: 100px;
+    width: 85%;
 }
 
 .menuItemContainer {
     width: 273px;
     height: 319px;
+    margin-top: 45px;
     margin-right: 25px;
     border-radius: 10.483px;
     border: 0.699px solid rgba(112, 112, 112, 0.20);
     position: relative;
-}
-
-.menuItemContainer:nth-child(4) {
-    margin-right: 0;
-}
-.menuItemContainer:nth-child(8) {
-    margin-right: 0;
 }
 
 .menuItemContainer p {
@@ -405,6 +390,7 @@ h3 {
     align-items: center;
     justify-content: center;
     margin-top: 116px;
+    margin-bottom: 14%;
 }
 
 .mobileAppContainer img {
@@ -427,11 +413,11 @@ h3 {
 }
 
 .contactContainer {
-    width: 1170px;
-    height: 230px;  
-    bottom: 440px;
-    left: calc((100% - 1170px) / 2);
+    width: 75%;
+    height: 4%;  
     position: absolute;
+    left: 12.5%;
+    bottom: 7.6%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,9 +429,25 @@ h3 {
     box-shadow: 0px -7px 5px 0px rgba(240,237,240,1);
 }
 
+.contactContainer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.contactContainer div:nth-child(1) {
+    border-right: 4px solid #E6E6E6;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .contactContainer a {
-    width: 100px;
-    height: 100px;
+    width: 10vh;
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .contactContainer p {
@@ -453,16 +455,7 @@ h3 {
     font-size: 28px;
     font-weight: 800;
     line-height: 37.5px;
-    margin-left: 18px;
-}
-
-.contactContainer p:nth-child(2) {
-    display: flex;
-    align-items: center;
-    padding-right: 94px;
-    border-right: 4px solid #E6E6E6;
-    margin-right: 94px;
-    height: 111px;
+    margin-left: 4%;
 }
 
 .mailBtn {
@@ -474,7 +467,7 @@ h3 {
 }
 
 footer {
-    height: 542px;
+    width: 100%;
     background: #232233;
     color: #FFF;
 }
@@ -581,6 +574,3 @@ footer {
     font-weight: 400;
     line-height: 24px;
 }
-
-
-
